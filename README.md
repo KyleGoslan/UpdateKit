@@ -11,6 +11,34 @@
 
 ## Usage
 
+Create an instance of a `UpdateKit` object:
+
+```swift
+let updateKit = UpdateKit()
+```
+
+
+### App Updated
+
+If you need to perform an action when your app is updated:
+
+```swift
+update.appUpdate { appVersion in
+    // Code to run on app update
+}
+```
+
+Note: Will always run once.
+
+
+### First launch
+
+If you need to run something on first launch:
+
+updateKit.firstLaunch { 
+    // Code to be run on first app launch
+}
+
 
 ## Installation
 
