@@ -35,9 +35,11 @@ Note: Will always run once.
 
 If you need to run something on first launch:
 
+```swift
 updateKit.firstLaunch { 
     // Code to be run on first app launch
 }
+```
 
 
 ## Installation
