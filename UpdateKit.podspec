@@ -9,14 +9,14 @@
 Pod::Spec.new do |s|
   s.name             = "UpdateKit"
   s.version          = "0.1.0"
-  s.summary          = "Easy to use timer for SpriteKit games."
+  s.summary          = "Perform actions on first launch or app updates easiliy."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = "Easy to set up and use timer for SpriteKit games. A few extra options to set a time limit and get notified when it is reached as well as the ability to speed up and slow down the timer."
+  s.description      = "UpdateKit makes it easy to perform an action the first time your app lauches or when an update is installed."
 
   s.homepage         = "https://github.com/KyleGoslan/UpdateKit"
   # s.screenshots    = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
