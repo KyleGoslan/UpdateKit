@@ -11,6 +11,11 @@
 		275235621CB7ADBC002BA7D8 /* UpdateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275235571CB7ADBC002BA7D8 /* UpdateKit.framework */; };
 		275235671CB7ADBC002BA7D8 /* UpdateKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275235661CB7ADBC002BA7D8 /* UpdateKitTests.swift */; };
 		275235721CB7AE00002BA7D8 /* UpdateKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275235711CB7AE00002BA7D8 /* UpdateKit.swift */; };
+		2752357E1CB86C5E002BA7D8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 275235791CB86C5E002BA7D8 /* .travis.yml */; };
+		2752357F1CB86C5E002BA7D8 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 2752357A1CB86C5E002BA7D8 /* CHANGELOG.md */; };
+		275235801CB86C5E002BA7D8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2752357B1CB86C5E002BA7D8 /* LICENSE */; };
+		275235811CB86C5E002BA7D8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2752357C1CB86C5E002BA7D8 /* README.md */; };
+		275235821CB86C5E002BA7D8 /* UpdateKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2752357D1CB86C5E002BA7D8 /* UpdateKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,11 @@
 		275235661CB7ADBC002BA7D8 /* UpdateKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateKitTests.swift; sourceTree = "<group>"; };
 		275235681CB7ADBC002BA7D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275235711CB7AE00002BA7D8 /* UpdateKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateKit.swift; sourceTree = "<group>"; };
+		275235791CB86C5E002BA7D8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		2752357A1CB86C5E002BA7D8 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = SOURCE_ROOT; };
+		2752357B1CB86C5E002BA7D8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		2752357C1CB86C5E002BA7D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		2752357D1CB86C5E002BA7D8 /* UpdateKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UpdateKit.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,11 @@
 		275235731CB7AE52002BA7D8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				275235791CB86C5E002BA7D8 /* .travis.yml */,
+				2752357A1CB86C5E002BA7D8 /* CHANGELOG.md */,
+				2752357B1CB86C5E002BA7D8 /* LICENSE */,
+				2752357C1CB86C5E002BA7D8 /* README.md */,
+				2752357D1CB86C5E002BA7D8 /* UpdateKit.podspec */,
 			);
 			name = Pod;
 			path = UpdateKit;
@@ -189,6 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275235801CB86C5E002BA7D8 /* LICENSE in Resources */,
+				275235821CB86C5E002BA7D8 /* UpdateKit.podspec in Resources */,
+				2752357E1CB86C5E002BA7D8 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275235811CB86C5E002BA7D8 /* README.md in Sources */,
 				275235721CB7AE00002BA7D8 /* UpdateKit.swift in Sources */,
+				2752357F1CB86C5E002BA7D8 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
