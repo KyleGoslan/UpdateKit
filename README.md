@@ -23,7 +23,7 @@ let updateKit = UpdateKit()
 If you need to perform an action when your app is updated:
 
 ```swift
-update.appUpdate { appVersion in
+updateKit.appUpdate { appVersion in
     // Code to run on app update
 }
 ```
