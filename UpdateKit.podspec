@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UpdateKit"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Perform actions on first launch or app updates easiliy."
   s.description      = "UpdateKit makes it easy to perform an action the first time your app lauches or when an update is installed."
 
