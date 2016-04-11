@@ -18,9 +18,4 @@ class UpdateKitTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
-    func testSaveAppVersion() {
-        print(defaults.valueForKey("appVersion"))
-        let updateKit = UpdateKit()
-    }
-
 }
