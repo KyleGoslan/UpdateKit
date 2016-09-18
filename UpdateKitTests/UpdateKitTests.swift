@@ -11,16 +11,11 @@ import XCTest
 
 class UpdateKitTests: XCTestCase {
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    func testSaveAppVersion() {
-        print(defaults.valueForKey("appVersion"))
-        let updateKit = UpdateKit()
     }
 
 }

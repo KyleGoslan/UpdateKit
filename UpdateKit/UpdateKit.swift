@@ -8,17 +8,17 @@
 
 import UIKit
 
-public class UpdateKit {
+open class UpdateKit {
     
     /// UpdateKit uses user defaults to check updates.
-    private let defaults = NSUserDefaults.standardUserDefaults()
+    fileprivate let defaults = UserDefaults.standard
     
     /// The current app version.
-    let appVersion = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+    let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     
     /// Defult init. Checks ot see if update kit has ever previously run, if not calls the saveAppVersion() method.
     public init() {
-        if defaults.valueForKey("appVersion") == nil {
+        if defaults.value(forKey: "appVersion") == nil {
             self.saveAppVerison()
         }
     }
@@ -29,8 +29,8 @@ public class UpdateKit {
      
      - Parameter completion:   Will be called the first time the user launches the app.
     */
-    public func firstLaunch(completion: (() -> Void)) {
-        if defaults.valueForKey("launched") == nil {
+    open func firstLaunch(_ completion: (() -> Void)) {
+        if defaults.value(forKey: "launched") == nil {
             completion()
             self.saveFirstLaunch()
         }
@@ -42,26 +42,26 @@ public class UpdateKit {
      
      - Parameter completion:   Will be called when the app is updated. Will always be called once.
      */
-    public func appUpdate(completion: ((appVersion: String) -> Void)) {
-        let savedAppVersion = defaults.valueForKey("appVersion") as? String
+    open func appUpdate(_ completion: ((_ appVersion: String) -> Void)) {
+        let savedAppVersion = defaults.value(forKey: "appVersion") as? String
         
         if savedAppVersion != appVersion {
             saveAppVerison()
-            completion(appVersion: appVersion)
+            completion(appVersion)
         }
     }
     
     /*
      Save the current app version the user defaults.
     */
-    private func saveAppVerison() {
+    fileprivate func saveAppVerison() {
         defaults.setValue(appVersion, forKey: "appVersion")
     }
     
     /*
      Save that the app has been launched to user defaults.
     */
-    private func saveFirstLaunch() {
+    fileprivate func saveFirstLaunch() {
         defaults.setValue(true, forKey: "launched")
     }
     
