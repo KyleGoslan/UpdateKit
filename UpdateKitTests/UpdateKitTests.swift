@@ -11,7 +11,7 @@ import XCTest
 
 class UpdateKitTests: XCTestCase {
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     override func setUp() {
         super.setUp()
