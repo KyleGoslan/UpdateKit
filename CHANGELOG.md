@@ -5,7 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Unreleased
 #### Changed
 
-## [0.1.4](https://github.com/KyleGoslan/UpdateKit/releases/tag/0.1.4)
+## [0.1.6](https://github.com/KyleGoslan/UpdateKit/releases/tag/0.1.6)
+Updated to Swift 3.
+Released on 2016-09-20.
+
+## [0.1.5](https://github.com/KyleGoslan/UpdateKit/releases/tag/0.1.5)
 Updated to Swift 3.
 Released on 2016-09-18.
 
