@@ -29,7 +29,7 @@ public class UpdateKit {
    
    - Parameter completion:   Will be called the first time the user launches the app.
    */
-  public func firstLaunch(completion: (() -> Void)) {
+  public func firstLaunch(completion: () -> Void) {
     if defaults.value(forKey: "launched") == nil {
       completion()
       self.saveFirstLaunch()
@@ -42,7 +42,7 @@ public class UpdateKit {
    
    - Parameter completion:   Will be called when the app is updated. Will always be called once.
    */
-  public func appUpdate(completion: ((_ appVersion: String) -> Void)) {
+  public func appUpdate(completion: (_ appVersion: String) -> Void) {
     let savedAppVersion = defaults.value(forKey: "appVersion") as? String
     
     if savedAppVersion != appVersion {
