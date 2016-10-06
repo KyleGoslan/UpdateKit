@@ -5,7 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## Unreleased
 #### Changed
 
-## [0.1.6](https://github.com/KyleGoslan/UpdateKit/releases/tag/0.1.7)
+## [0.1.7](https://github.com/KyleGoslan/UpdateKit/releases/tag/0.1.7)
 Slight syntax change.
 Released on 2016-09-21.
 
