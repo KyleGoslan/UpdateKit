@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UpdateKit"
-  s.version          = "0.1.7"
+  s.version          = "0.1.8"
   s.summary          = "Perform actions on first launch or app updates easiliy."
   s.description      = "UpdateKit makes it easy to perform an action the first time your app lauches or when an update is installed."
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author           = { "KyleGoslan" => "kylegoslan@me.com" }
   s.source           = { :git => "https://github.com/KyleGoslan/UpdateKit.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/KyleGoslan'
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '11.0'
   s.requires_arc = true
   s.source_files = 'UpdateKit'
 
